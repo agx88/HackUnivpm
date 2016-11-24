@@ -28,7 +28,7 @@ $conn = new mysqli($HOST, $USER, $PSWD, $DB) or die('Error connecting to server 
 // Inserisco 1 Admin, 2 operatori e 3 netturbini
 // Admin
 $i = 0;
-$query = "INSERT INTO `utenti` (`Id`, `Nome`, `Cognome`, `Role`, `Password`) VALUES (NULL, 'Admin_$i', 'Admin_$i', 'Admin', '1234');";
+$query = "INSERT INTO `utenti` (`Id`, `Nome`, `Cognome`, `Role`, `Password`, `Username`) VALUES (NULL, 'Admin_$i', 'Admin_$i', 'Admin', '1234', 'Admin_$i');";
 
 if($conn->query($query) === TRUE){
 	echo "<H4>Inserimento in utenti di (Admin) Admin_$i è avvenuta correttamente in 'utenti'</H4>";
@@ -38,7 +38,7 @@ if($conn->query($query) === TRUE){
 
 // Operatori
 for($i=1; $i<= 2; $i++){
-	$query = "INSERT INTO `utenti` (`Id`, `Nome`, `Cognome`, `Role`, `Password`) VALUES (NULL, 'Pippo_$i', 'Paperino_$i', 'Operatore', '1234');";
+	$query = "INSERT INTO `utenti` (`Id`, `Nome`, `Cognome`, `Role`, `Password`, `Username`) VALUES (NULL, 'Pippo_$i', 'Paperino_$i', 'Operatore', '1234', 'Pippo_$i');";
 
 	if($conn->query($query) === TRUE){
 		echo "<H4>Inserimento in utenti di (Operatore) Pippo_$i è avvenuta correttamente in 'utenti'</H4>";
@@ -48,7 +48,7 @@ for($i=1; $i<= 2; $i++){
 }
 // Netturbini
 for($i=1; $i<= 3; $i++){
-	$query = "INSERT INTO `utenti` (`Id`, `Nome`, `Cognome`, `Role`, `Password`) VALUES (NULL, 'Topolino_$i', 'Pluto_$i', 'Netturbino', '1234');";
+	$query = "INSERT INTO `utenti` (`Id`, `Nome`, `Cognome`, `Role`, `Password`, `Username`) VALUES (NULL, 'Topolino_$i', 'Pluto_$i', 'Netturbino', '1234', 'Topolino_$i');";
 
 	if($conn->query($query) === TRUE){
 		echo "<H4>Inserimento in utenti di (Netturbino) Topolino_$i è avvenuta correttamente in 'utenti'</H4>";
