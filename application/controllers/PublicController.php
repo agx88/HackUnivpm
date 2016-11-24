@@ -13,6 +13,14 @@ class PublicController extends Zend_Controller_Action
     	  $this->_publicModel=new Application_Model_Public(); //Istanzio il Model
     }
 	
+	public function loginAction()
+	{
+		$this->_helper->layout->setLayout('login');
+	}
 	
+	public function validateLoginAction()
+	{
+		
+	}
 }
 
