@@ -34,10 +34,11 @@ class Bootstrap extends Zend_Application_Bootstrap_Bootstrap
         $this->_view = $this->getResource('view');
         $this->_view->headMeta()->setCharset('UTF-8');
         $this->_view->headMeta()->appendHttpEquiv('Content-Language', 'it-IT');
-        $this->_view->headLink()->appendStylesheet($this->_view->baseUrl('css/ie/v8.css'));
-		$this->_view->headLink()->appendStylesheet($this->_view->baseUrl('css/ie/v9.css'));
-		
-        $this->_view->headTitle('Corso di Tecnologie Web - Zend Project - Versione 6');
+        $this->_view->headLink()->appendStylesheet($this->_view->baseUrl('css/materialize.css'));
+		$this->_view->headLink()->appendStylesheet($this->_view->baseUrl('css/page-center.css'));
+		$this->_view->headLink()->appendStylesheet($this->_view->baseUrl('css/prism.css'));
+		$this->_view->headLink()->appendStylesheet($this->_view->baseUrl('css/style.css'));
+        
     }
 	
 	protected function _initDefaultModuleAutoloader() //Zend deve sapere come caricare la libreria App, non standard
