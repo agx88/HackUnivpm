@@ -17,9 +17,10 @@ class PublicController extends Zend_Controller_Action
 	{
 		$this->_helper->layout->setLayout('login');
 	}
-	
-	public function validateLoginAction()
+	public function validateloginAction()
 	{
+		
+		
 		
 	}
 }
