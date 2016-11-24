@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-	<?= $this->headMeta(); ?>
-    <?= $this->headLink(); ?>
-    <?= $this->headTitle(); ?>
-    <?= $this->headScript(); ?>
+	
 <!--================================================================================
 	Item Name: Materialize - Material Design Admin Template
 	Version: 1.0
@@ -12,6 +9,22 @@
 ================================================================================ -->
 
 <head>
+	<?= $this->headMeta(); ?>
+    <?= $this->headLink(); ?>
+    <?= $this->headTitle(); ?>
+    <?= $this->headScript(); ?>
+    
+  <!-- jQuery Library -->
+  <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+  <!--materialize js-->
+  <script type="text/javascript" src="js/materialize.js"></script>
+  <!--prism-->
+  <script type="text/javascript" src="js/prism.js"></script>
+  <!--scrollbar-->
+  <script type="text/javascript" src="js/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+
+  <!--plugins.js - Some Specific JS codes for Plugin Settings-->
+  <script type="text/javascript" src="js/plugins.js"></script>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -62,14 +75,14 @@
           <div class="input-field col s12">
             <i class="mdi-social-person-outline prefix"></i>
             <input id="username" type="text">
-            <label for="username" class="center-align">Username</label>
+            <label for="username" class="center-align"></label>
           </div>
         </div>
         <div class="row margin">
           <div class="input-field col s12">
             <i class="mdi-action-lock-outline prefix"></i>
             <input id="password" type="password">
-            <label for="password">Password</label>
+            <label for="password"></label>
           </div>
         </div>
         <div class="row">          
@@ -82,7 +95,7 @@
           <div class="input-field col s12">
             <a href="<?= $this->url(array(
 								'controller' => 'public',
-                        		'action'     => 'validateLogin'), 
+                        		'action'     => 'validatelogin'), 
                         		'default',true
                     			); 
                  			 ?>" class="btn waves-effect waves-light col s12">Login</a>
@@ -107,17 +120,6 @@
     Scripts
     ================================================ -->
 
-  <!-- jQuery Library -->
-  <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
-  <!--materialize js-->
-  <script type="text/javascript" src="js/materialize.js"></script>
-  <!--prism-->
-  <script type="text/javascript" src="js/prism.js"></script>
-  <!--scrollbar-->
-  <script type="text/javascript" src="js/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-
-  <!--plugins.js - Some Specific JS codes for Plugin Settings-->
-  <script type="text/javascript" src="js/plugins.js"></script>
 
 </body>
 
