@@ -12,5 +12,7 @@ class PublicController extends Zend_Controller_Action
     {
     	  $this->_publicModel=new Application_Model_Public(); //Istanzio il Model
     }
+	
+	
 }
 
