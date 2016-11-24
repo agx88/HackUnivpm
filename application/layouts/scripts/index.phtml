@@ -1,0 +1,65 @@
+<?php echo $this->doctype() ?>
+<html lang="it">
+	<head>
+		<title> Smart Rubbish</title>
+	<?= $this->headMeta(); ?>
+    <?= $this->headLink(); ?>
+    <?= $this->headTitle(); ?>
+    <?= $this->headScript(); ?>
+    <link href='http://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<script src="js/init.js"></script>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+	</head>
+	<body class="homepage">
+
+		<!-- Header -->
+		<div id="header">
+			<div class="container"> 
+				
+				<!-- Logo -->
+				<div id="logo">
+					<h1><a href="#">Clean Bin</a></h1>		
+				</div>
+				
+				<!-- Nav -->
+					<?= $this->render('homenavbar.phtml') ?>
+				
+			</div>
+		</div>
+
+		<!-- Main -->
+		<?php echo $this -> layout() -> content; ?>
+
+		<!-- Footer -->
+		
+
+		<!-- Footer -->
+		
+
+		<!-- Copyright -->
+		<div id="copyright">
+			<div class="container">
+				<ul>
+					<li>
+						<a>Contattaci</a>
+				
+					</li>
+					<li>
+						<a>Seguici su FB</a>
+				
+					</li>
+					<li>
+						<a>Condizioni d'uso</a>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+		
+	</body>
+</html>
